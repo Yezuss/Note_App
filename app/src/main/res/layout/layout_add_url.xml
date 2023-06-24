@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutAddUrlContainer"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/background_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_web_link"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:id="@+id/imageAddURL"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        app:tint="@color/white"></ImageView>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/imageAddURL"
+        app:layout_constraintStart_toEndOf="@id/imageAddURL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAddURL"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/white"
+        android:text="add url"
+        android:includeFontPadding="false"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/imageAddURL"
+        android:textSize="@dimen/_13ssp"
+        android:textColorHint="@color/ColorTextHint"
+        android:textColor="@color/white"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:inputType="textUri"
+        android:includeFontPadding="false"
+        android:importantForAutofill="no"
+        android:imeOptions="actionDone"
+        android:hint="enter url"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:id="@+id/inputURL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"></EditText>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/inputURL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:textColor="@color/ColorAccent"
+        android:textSize="@dimen/_13ssp"
+        android:text="add"
+        android:padding="@dimen/_8sdp"
+        android:includeFontPadding="false"
+        android:id="@+id/textAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/inputURL"
+        app:layout_constraintEnd_toStartOf="@id/textAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/ColorAccent"
+        android:text="Cancel"
+        android:padding="@dimen/_8sdp"
+        android:includeFontPadding="false"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:id="@+id/textCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
